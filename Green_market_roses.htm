@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=Windows-1251" />
+	<meta name="author" content="admin" />
+
+	<title>Green Market Roses</title>
+    <link rel="stylesheet" type="text/css" href="green_style.css"  />
+    <script src="jquery.min.js"></script>
+ 
+    
+     
+    <script type="text/javascript">
+     var old_images = new Array();
+     var new_images = new Array();   
+     for (var i = 1; i<=5;i++)
+     {
+        old_images[i] = new Image(5);
+        new_images[i] = new Image(5);
+        old_images[i].src = "img"+i+".png";
+        new_images[i].src = "pic"+i+".png";
+     }
+     function ImageOut(img){
+        document.images[img+1].src = old_images[img].src;
+     }
+     function ImageOver(img){
+        document.images[img+1].src = new_images[img].src;
+        
+     }
+     
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+	 
+	$("#back-top").hide();
+	
+	 
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+	 
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>
+</head>
+
+<body id="top">
+<div class="tulp_fon">
+<img src="тюльп-1.jpg" width="100%" height="1250px"/>
+<div class="ImgRoses">
+<img src="Стр1_розы_4.jpg" width="100%" height="1100*1.02"/>
+<div class="image1"><a href="Sword green market.htm" onmouseover="ImageOver(1)" onmouseout="ImageOut(1)"><img src="img1.png" height="48px"/></a></div>
+<div class="image2"><a href="Green_market_delivery.htm" onmouseover="ImageOver(2)" onmouseout="ImageOut(2)"><img src="img2.png" height="80px"/></a></div>
+<div class="image3"><a href="javascript:void(0)" onmouseover="ImageOver(3)" onmouseout="ImageOut(3)"><img src="img3.png" height="80px"/></a></div>
+<div class="image4"><a href="javascript:void(0)" onmouseover="ImageOver(4)" onmouseout="ImageOut(4)"><img src="img4.png" height="80px"/></a></div>
+<div class="image5"><a href="javascript:void(0)" onmouseover="ImageOver(5)" onmouseout="ImageOut(5)"><img src="img5.png" height="80px"/></a></div>
+<div class="buy1"><input type="image" src="Купить.png" onclick="this.blur();"/></div>
+<div class="buy2"><input type="image" src="Купить.png" onclick="this.blur();"/></div>
+<div class="buy3"><input type="image" src="Купить.png" onclick="this.blur();"/></div>
+<div class="buy4"><input type="image" src="Купить.png" onclick="this.blur();"/></div>
+<div class="buy5"><input type="image" src="Купить.png" onclick="this.blur();"/></div>
+<div class="buy6"><input type="image" src="Купить.png" onclick="this.blur();"/></div>
+<div class="buy7"><input type="image" src="Купить.png" onclick="this.blur();"/></div>
+</div>
+<p id="back-top">
+		<a href="#top"><span></span>Вверх</a>
+	</p>
+</div>
+ 
+</body>
+</html>  

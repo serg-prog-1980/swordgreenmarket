@@ -1,0 +1,3 @@
+<?
+$_SERVER = sword.lan;
+?>

@@ -1,3 +1,1 @@
-<?
-$_SERVER = sword.lan;
-?>
+$Id$
